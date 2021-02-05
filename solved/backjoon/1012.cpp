@@ -1,8 +1,9 @@
+//
+// Created by yangheechan on 2021-02-05.
+//
+
 #include <iostream>
 #include <vector>
-#include <string>
-#include <cmath>
-#include <algorithm>
 
 using std::vector;
 using std::string;

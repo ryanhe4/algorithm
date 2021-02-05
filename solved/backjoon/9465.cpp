@@ -50,16 +50,6 @@ public:
         return ret;
     }
 
-    string replaceAll(string orig, string pattern, string to)
-    {
-        auto start_pos = 0;
-        while ((start_pos = orig.find(pattern, start_pos))!=string::npos) {
-            orig.replace(start_pos, pattern.length(), to);
-            start_pos += to.length();
-        }
-        return orig;
-    }
-
 private:
     vector<vector<int>> arr{};
     vector<vector<int>> cache{};
