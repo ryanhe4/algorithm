@@ -20,7 +20,7 @@ public:
     hanoi(n, 1, 3, 2);
   }
   // cout은 속도 제한 문제로 printf를 사용해야 한다.
-  static auto move(int start, int to) -> void { printf("%d %d\n", start, to); }
+  auto move(int start, int to) -> void { printf("%d %d\n", start, to); }
   auto hanoi(int n, int start, int to, int via) -> void {
     if (n == 1)
       move(start, to);
