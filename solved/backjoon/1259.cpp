@@ -1,3 +1,6 @@
+//
+// Created by yangheechan on 2021-06-03.
+//
 #include <bits/stdc++.h>
 using std::vector;
 using std::string;
@@ -5,20 +8,9 @@ using std::cin;
 using std::cout;
 
 int n;
-int m;
 string str;
 
-vector<int> v;
-vector<string> sv;
-
-int dx[4] = {-1, 0, 1, 0};
-int dy[4] = {0, -1, 0, 1};
-vector<vector<bool>> visited;
-vector<int> tracking;
-
-//= vector<vector<bool>>(n, vector<bool>(m, false));
-
-int main()
+int palindrome()
 {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
@@ -29,9 +21,9 @@ int main()
         bool isPalindrome = true;
         for (int i = 0; i<str.size()/2; i++) {
             if (str[i] != str[str.size()-1 -i]) {
-              cout << "no" <<"\n";
-              isPalindrome = false;
-              break;
+                cout << "no" <<"\n";
+                isPalindrome = false;
+                break;
             }
         }
         if(isPalindrome) {
